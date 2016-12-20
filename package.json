@@ -1,8 +1,8 @@
 {
-  "name": "majestyofvue-homework",
+  "name": "mv2-homework",
   "version": "0.1.0",
-  "description": "A Vue.js project",
-  "author": "Kayd Withers <kayd.withers@isobar.com>",
+  "description": "A collection of homework from the excellent book, the Majesty of Vue.js 2",
+  "author": "Kayd Withers <kaydwithers@gmail.com>",
   "private": true,
   "scripts": {
     "watchify": "watchify -vd -p browserify-hmr -e src/main.js -o dist/build.js",

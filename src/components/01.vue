@@ -1,6 +1,6 @@
 <template>
   <div class="mb3">
-    <h2>Two way binding</h2>
+    <h2>Two way binding (v-model)</h2>
     <h3>Hello {{ nameFull }}</h3>
     <label for="nameFull">Enter Your Name</label>
     <input name="nameFull" type="text" v-model="nameFull" />

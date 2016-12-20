@@ -1,6 +1,6 @@
 <template>
   <div class="mb3">
-    <h2>Template v-if</h2>
+    <h2>Template (v-if)</h2>
 
     <div v-if="gender == 'male' || gender == 'female'">
       <h3>

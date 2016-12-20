@@ -1,12 +1,14 @@
 <template>
 
-  <!--<button @click.prevent="toggle()">
+  <!--
+  <button @click.prevent="toggle()">
     {{ toggleActive ? 'Hide ' + name : 'Show ' + name }}
   </button>
 
   <div v-show="toggleActive">
     <slot></slot>
-  </div>-->
+  </div>
+  -->
 
 </template>
 

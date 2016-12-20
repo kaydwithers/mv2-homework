@@ -1,13 +1,21 @@
 <template>
   <div class="mb3">
-    <h2>List rendering</h2>
+    <h2>Simple Calculator (@click)</h2>
 
     <div class="mb1">
-      <ul>
-        <li v-for="(value, key, index) in values">
-          {{ index }}: {{ key }} = {{ value }}
-        </li>
-      </ul>
+      <input type="number" v-model.number="a">
+      <select v-model="operator">
+        <option>+</option>
+        <option>-</option>
+        <option>*</option>
+        <option>/</option>
+      </select>
+      <input type="" v-model.number="b">
+    </div>
+
+    <div class="mb1">
+      <button @click.prevent="calculate">Calculate</button>
+      <h4>Result: {{a}} {{operator}} {{b}} = {{c}}</h4>
     </div>
 
   </div>
@@ -19,12 +27,27 @@
   export default {
     data () {
       return {
-        values: {
-          name: 'Kayd',
-          height: '186cm',
-          weight: 'N/A',
-          eyeColor: 'Green',
-          favoriteFood: 'Pizza',
+        a: 1,
+        b: 2,
+        c: null,
+        operator: '+',
+      }
+    },
+    methods: {
+      calculate: function() {
+        switch (this.operator) {
+          case '+':
+            this.c = this.a + this.b
+            break;
+          case '-':
+            this.c = this.a - this.b
+            break;
+          case '*':
+            this.c = this.a * this.b
+            break;
+          case '/':
+            this.c = this.a / this.b
+            break;
         }
       }
     }

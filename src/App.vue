@@ -14,6 +14,7 @@
     <one></one>
     <two></two>
     <three></three>
+    <four></four>
 
     <pre>
       {{ $data }}
@@ -28,6 +29,7 @@ import Toggle from './components/Toggle.vue'
 import One from './components/01.vue'
 import Two from './components/02.vue'
 import Three from './components/03.vue'
+import Four from './components/04.vue'
 
 export default {
   name: 'app',
@@ -36,7 +38,8 @@ export default {
     Toggle,
     One,
     Two,
-    Three
+    Three,
+    Four
   }
 }
 </script>
@@ -59,7 +62,7 @@ export default {
     margin-bottom: .5rem;
   }
 
-  input {
+  input, select {
     padding: .5rem;
   }
 
@@ -74,6 +77,10 @@ export default {
   li {
     list-style: none;
     margin-bottom: .5em;
+  }
+
+  .db {
+    display: block;
   }
 
   .mb1 {

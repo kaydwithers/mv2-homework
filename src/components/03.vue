@@ -1,6 +1,6 @@
 <template>
   <div class="mb3">
-    <h2>List rendering</h2>
+    <h2>List rendering (v-for)</h2>
 
     <div class="mb1">
       <ul>
